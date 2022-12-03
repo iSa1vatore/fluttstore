@@ -65,7 +65,7 @@ class _ProductImagesCarouselState extends State<ProductImagesCarousel> {
                   errorWidget: (context, url, error) => const Icon(
                     Icons.error,
                   ),
-                  fit: BoxFit.fitWidth,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
