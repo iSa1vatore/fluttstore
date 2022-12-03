@@ -1,0 +1,86 @@
+name: fluttstore
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.0-444.0.dev <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+
+  # UI
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^1.1.6
+  auto_route: ^5.0.1
+  flutter_rating_bar: ^4.0.1
+  cached_network_image: ^3.2.3
+  flutter_native_splash: ^2.2.16
+
+  #DI
+  provider: ^6.0.3
+
+  # Serialization
+  json_annotation: ^4.7.0
+
+  # Network
+  retrofit: '>=3.0.0 <4.0.0'
+  dio: ^4.0.6
+
+  # State
+  flutter_bloc: ^8.1.1
+
+  # Utils
+  freezed_annotation: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  dart_code_metrics: ^4.19.0
+  build_runner: ^2.2.1
+  flutter_gen_runner:
+  retrofit_generator: '>=4.0.0 <5.0.0'
+  json_serializable: '>4.4.0'
+  auto_route_generator: ^5.0.2
+  freezed: ^2.1.0+1
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: MarkPro
+      fonts:
+        - asset: assets/fonts/mark_pro/Mark-Pro.ttf
+          weight: 400
+        - asset: assets/fonts/mark_pro/Mark-Pro-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/mark_pro/Mark-Pro-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/mark_pro/Mark-Pro-Heavy.ttf
+          weight: 900
+
+  assets:
+    - assets/icons/
+
+flutter_gen:
+  output: lib/assets/res/
+  style: camel-case
+  integrations:
+    flutter_svg: true
+
+flutter_intl:
+  enabled: true
+  class_name: Localization
+  main_locale: en
+  arb_dir: lib/assets/localization
+  output_dir: lib/assets/localization/generated
+  use_deferred_loading: false
